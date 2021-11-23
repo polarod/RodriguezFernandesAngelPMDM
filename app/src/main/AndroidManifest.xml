@@ -13,7 +13,8 @@
         android:theme="@style/Theme.ProyectoMoviePMDP">
         <activity
             android:name=".actvities.LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,13 +22,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".actvities.PeliculasActivity"
-                  android:exported="true">
+                  android:exported="true"
+                  android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".actvities.LoginActivity"/>
+
         </activity>
         <activity android:name=".actvities.RegisterActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".actvities.LoginActivity"/>

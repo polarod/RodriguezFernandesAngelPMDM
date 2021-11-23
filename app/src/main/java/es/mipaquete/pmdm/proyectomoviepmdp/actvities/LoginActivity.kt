@@ -1,6 +1,7 @@
 package es.mipaquete.pmdm.proyectomoviepmdp.actvities
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ class LoginActivity: AppCompatActivity() {
     lateinit var btregist: Button
 
     override fun onCreate(savedInstanceState: Bundle?){
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
@@ -26,6 +28,7 @@ class LoginActivity: AppCompatActivity() {
         btregist.setOnClickListener(){
             val intento2= Intent(this, RegisterActivity::class.java)
             startActivity(intento2)
+
 
         }
     }

@@ -1,5 +1,6 @@
 package es.mipaquete.pmdm.proyectomoviepmdp.actvities
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -14,6 +15,8 @@ class PeliculasActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPeliculasBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+        setTitle("Peliculas")
         super.onCreate(savedInstanceState)
 
         //Inflo las vistas
